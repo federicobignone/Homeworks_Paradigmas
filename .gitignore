@@ -1,0 +1,6 @@
+# Compilados y binarios
+/build/
+*.o
+*.out
+*.dSYM
+.vscode/
