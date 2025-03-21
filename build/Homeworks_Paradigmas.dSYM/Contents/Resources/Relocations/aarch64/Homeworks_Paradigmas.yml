@@ -1,5 +1,0 @@
----
-triple:          'arm64-apple-darwin'
-binary-path:     'build/Homeworks_Paradigmas'
-relocations:     []
-...

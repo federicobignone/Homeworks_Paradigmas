@@ -1,6 +1,5 @@
 # Ignorar archivos de configuración de VS Code
 .vscode/
-*.code-workspace
 
 # Ignorar archivos de sistema en macOS
 .DS_Store
@@ -31,6 +30,7 @@ build/*
 # Ignorar ejecutables sin extensión dentro de Homework_1/source/
 Homework_1/source/exercise1
 Homework_1/source/exercise*
+Homework_1/source/*.dSYM/
 
 # Ignorar todo en Homework_1/source, excepto código fuente
 Homework_1/source/*
