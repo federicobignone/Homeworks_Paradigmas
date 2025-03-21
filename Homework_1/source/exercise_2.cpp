@@ -90,7 +90,7 @@ void logMaintenance(const std::string &mensaje) {
 // Testeo de las funciones
 int main() {
   try {
-    // Logging básico
+    // Logging básico como si fuera un sistema de un banco
     logMessage("Consulta de saldo realizada por usuario 123456",
                LogLevel::DEBUG);
     logMessage("Transferencia de $500 realizada a cuenta 789012",

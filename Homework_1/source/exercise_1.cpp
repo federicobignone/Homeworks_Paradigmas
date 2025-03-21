@@ -1,6 +1,6 @@
 #include <iostream>
 #include <sstream> // Necesario para stringstream
-#include <vector>  // Necesario para vector
+#include <vector>
 
 // Se usa size_t para los índices (coincide con lo que espera vector).
 std::vector<std::vector<int>> generateMatrix(int n) {
@@ -30,7 +30,7 @@ void printMatrixDescendingOrder(const std::vector<std::vector<int>> &matrix) {
     // Division entera para obtener el índice i y módulo para obtener el j.
     std::cout << "M" << N << "[" << i << "][" << j << "] = " << matrix[i][j]
               << std::endl;
-  } // Se muestra en formato "M[n][i][j] = valor"
+  }
 }
 
 int main() {
@@ -41,20 +41,20 @@ int main() {
   while (true) {
     std::cout << "Ingrese un valor entero positivo mayor que 1: ";
     std::getline(std::cin, input); // lee toda la línea como string
-    std::stringstream ss(input);   // convierte la string a stream
+    std::stringstream ss(input);
 
     if ((ss >> n) && ss.eof() &&
         n > 1) { // intenta extraer un int y verifica que no haya más caracteres
-                 // después del número
+                 // después del número.
       break;
     } else {
       std::cout << "Entrada inválida. Intente de nuevo.\n";
     }
     // uso sstream porque cin >> n hace casteos no seguros y puede fallar.
   }
-  // Ejecuta el programa.
+
   std::vector<std::vector<int>> matrix = generateMatrix(n);
   printMatrixDescendingOrder(matrix);
 
-  return 0; // El programa termina sin errores.
+  return 0;
 }
