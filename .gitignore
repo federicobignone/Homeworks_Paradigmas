@@ -1,6 +1,20 @@
-# Compilados y binarios
-/build/
+# Ignorar todos los archivos compilados
 *.o
 *.out
-*.dSYM
-.vscode/
+*.exe
+*.bin
+*.a
+*.so
+*.dylib
+
+# Ignorar ejecutables generados en source/
+source/exercise1
+source/*.o
+source/*.out
+source/*.exe
+source/*.dSYM/  # En macOS
+
+# Si querés ignorar TODO lo que se genere en source/
+source/*
+!source/*.cpp   # Pero mantiene los archivos fuente C++
+!source/*.h
