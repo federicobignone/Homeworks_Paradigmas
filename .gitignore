@@ -1,20 +1,45 @@
-# Ignorar todos los archivos compilados
+# Ignorar archivos de configuración de VS Code
+.vscode/
+*.code-workspace
+
+# Ignorar archivos de sistema en macOS
+.DS_Store
+
+# Ignorar carpeta de compilación
+build/
+build/*
+
+# Ignorar archivos de depuración de macOS
+*.dSYM/
+*.dSYM/**
+
+# Ignorar ejecutables y archivos compilados en cualquier carpeta
 *.o
+*.obj
 *.out
-*.exe
-*.bin
 *.a
 *.so
+*.exe
+*.dll
+*.bin
 *.dylib
+*.lo
+*.la
+*.al
+*.libs
 
-# Ignorar ejecutables generados en source/
-source/exercise1
-source/*.o
-source/*.out
-source/*.exe
-source/*.dSYM/  # En macOS
+# Ignorar ejecutables sin extensión dentro de Homework_1/source/
+Homework_1/source/exercise1
+Homework_1/source/exercise*
 
-# Si querés ignorar TODO lo que se genere en source/
-source/*
-!source/*.cpp   # Pero mantiene los archivos fuente C++
-!source/*.h
+# Ignorar todo en Homework_1/source, excepto código fuente
+Homework_1/source/*
+!Homework_1/source/*.cpp
+!Homework_1/include/*.h
+
+# Ignorar archivos temporales
+*.tmp
+*.swp
+*.swo
+*.bak
+*~
