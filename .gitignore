@@ -37,6 +37,19 @@ Homework_1/source/*
 !Homework_1/source/*.cpp
 !Homework_1/include/*.h
 
+# Ignorar ejecutables sin extensión dentro de Homework_2/source/
+Homework_2/source/exercise*
+Homework_2/source/*.dSYM/
+Homework_2/source/numeros_app
+Homework_2/source/banco_app
+Homework_2/source/curso_app
+Homework_2/source/tiempo
+
+# Ignorar todo en Homework_2/source, excepto código fuente
+Homework_2/source/*
+!Homework_2/source/*.cpp
+!Homework_2/include/*.h
+
 # Ignorar archivos temporales
 *.tmp
 *.swp
